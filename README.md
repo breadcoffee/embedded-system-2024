@@ -24,7 +24,9 @@
             - channel : 핀번호, 반환값 : H/L or 1/0 or T/F
     - 시간지연 함수
         1. time.sleep(secs)
-            - secs : 0.001초 단위 1000 = 1초
+            - secs : 1초 단위
 
     ![라즈베리파이 핀맵](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em001.png)
+
+    - 인터럽트 : CPU가 특정 기능을 수행하는 도중에 급하게 다른 일을 처리하고자 할 때 사용할 수 있는 기능이다.
     
