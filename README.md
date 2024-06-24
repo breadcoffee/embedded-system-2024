@@ -44,4 +44,25 @@
         python -m venv env # venv 설치
         source ./env/bin/activate # venv 실행
         deactivate # venv 실행종료
+        python -m venv --system-site-packages env # 패키지까지 같이 설치
     ```
+
+## 3일차
+- 릴레이 모듈
+    - 릴레이는 전자석의 원리로 전류가 흐르면 자기장을 형성해 자기력으로 자석을 끌어 당겼다가 전류가 흐르지 않으면 자석을 놓는 원리이다.
+    - 즉, 스위치 역할로 사용 가능하다.
+    - 기본적으로 5V에서 동작한다.
+
+    ![릴레이 모듈](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em002.png)
+
+- 스텝 모터
+    - 한 바퀴 회전을 많은 스텝들로 나눌 수 있는 브러쉬리스 직류 전기 모터이다.
+    - 스텝 상태의 펄스에 순서를 부여하고 주어진 펄스 수에 비례한 각도만큼 회전하는 모터이다.
+    - 특징으로는 미세한 각도 조절이 가능한 모터이다.
+
+- Flask
+    - 파이썬 언어로 개발한 웹개발 프레임워크 중 하나이다.
+    - 용량도 작고 사용법도 간단해 라즈베리파이에서 손쉽게 웹을 통해 GPIO를 제어할 수 있음
+
+    - GET 방식 파라미터 전달 : ?key=value&key=value 값으로 전달
+    ![GET 방식](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em003.png)
