@@ -66,3 +66,10 @@
 
     - GET 방식 파라미터 전달 : ?key=value&key=value 값으로 전달
     ![GET 방식](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em003.png)
+
+## 4일차
+- FND(7-segment)
+    - 세그먼트 방식의 숫자 표시 소자로 일반적으로 7개의 세그먼트로 숫자를 표시하는 방식이다.
+    - 각 자리마다 알파벳이 생기고 해당하는 자리에 점등하여 글자를 표시한다. 
+
+    ![세그먼트 표현방식](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em004.png)
