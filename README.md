@@ -73,3 +73,7 @@
     - 각 자리마다 알파벳이 생기고 해당하는 자리에 점등하여 글자를 표시한다. 
 
     ![세그먼트 표현방식](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em004.png)
+
+    ![fnd 핀](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em005.png)
+
+
