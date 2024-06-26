@@ -18,13 +18,13 @@ list = [
 	[0,1,1,1,1,1,0,1], # 6
 	[0,0,0,0,0,1,1,1], # 7
 	[0,1,1,1,1,1,1,1], # 8
-	[0,1,1,0,0,1,1,1] #9
+	[0,1,1,0,0,1,1,1], #9
 	]
 
 def Display(num):
 	y = 0
 	# 각 자리 숫자 추출
-	fnd = [0,0,0,0]
+	fnd = [5,6,7,8]
 	fnd[0] = int((num/100)/10)
 	fnd[1] = int((num/100)%10)
 	fnd[2] = int((num%100)/10)
@@ -67,4 +67,18 @@ def Display(num):
 
 		# 숫자 원형 출력
 		for x in list[d]:
-			GPIO.output(4, x)
+			GPIO.output(20,x)
+			GPIO.output(21,1)
+			GPIO.output(21,0)
+			GPIO.output(20,0)
+			GPIO.output(22,1)
+			GPIO.output(22,0)
+		y+=1
+		time.sleep(0.005)
+
+try:
+	while True:
+		Display(1234)
+
+except KeyboardInterrupt:
+	GPIO.cleanup()
