@@ -5,8 +5,10 @@ GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 pin = (20,21,22,23,24,25,26)
 digits = (5,6,7,8)
+switch = 16
 count = 0
 
+GPIO.setup(switch, GPIO.IN)
 for a in pin:
 	GPIO.setup(a, GPIO.OUT)
 	GPIO.output(a, 0)
@@ -26,11 +28,13 @@ list = {
 	'7':(1,1,1,0,0,1,0,0), # 7
 	'8':(1,1,1,1,1,1,1,0), # 8
 	'9':(1,1,1,1,0,1,1,0) # 9
-	}
+}
 
 try:
 	while True:
-		count += 0.025
+		if GPIO.input(switch) == True:
+			count += 1
+			time.sleep(0.1)
 		for digit in range(4):
 			fnd = [0,0,0,0]
 			fnd[0] = int((count/100)/10)
