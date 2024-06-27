@@ -76,4 +76,16 @@
 
     ![fnd 핀](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em005.png)
 
+## 5일차
+- FND 응용
+    - FND 4digit 모두 점등하기
+        - FND는 불을 계속 켜놓는 것이 아닌 번갈아서 소등 및 점등을 반복하는 것이다.
+        - 짧은 시간안에 반복하여 계속 켜저 있는 것처럼 보이게 만듬
 
+    - 스위치로 1씩 숫자 증가
+        - 스위치를 누를때 숫자 1씩 증가시 time.sleep()를 사용해야하는데 그때 점등이 잠깐 멈춤
+        - 다른 방법을 찾아봐야함
+
+## 6일차
+- FND 응용
+    - 
