@@ -87,5 +87,15 @@
         - 다른 방법을 찾아봐야함
 
 ## 6일차
-- FND 응용
-    - 
+- PyQt5 
+    - GUI를 간단하게 개발하게 해주는 어플리케이션 프레임워크 툴
+    - GUI와 센서를 연결하여 동작한다.
+
+## 7일차
+- 개인 프로젝트(PyQt5 이용)
+    - iotProject01 & design01.ui
+        - LED on/off 기능
+
+    - iotProject02 & design01.ui
+        - 온습도 센서 포함
+        - Adafruit 모듈 설치가 안되서 실패
