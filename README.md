@@ -111,4 +111,6 @@
         - 자동문 시스템
         - 초음파 거리센서를 이용해서 30cm 이상 가까워지면 문으로 열고 멀어지면 문을 닫는다.
 
-    
+
+https://github.com/breadcoffee/embedded-system-2024/assets/146920372/d3d4f8ef-7c65-4009-b926-3636ea2be25d
+
