@@ -1,4 +1,4 @@
-#!/home/pi/Documents/embedded-system-2024/env/bin/python
+#!/home/pi/Documents/embedded-system-2024/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

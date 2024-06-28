@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 
-piezoPin = 13
+piezoPin = 17
 melody = [131, 147, 165, 175, 196, 220, 247, 262]
 
 GPIO.setmode(GPIO.BCM)
