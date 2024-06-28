@@ -95,10 +95,12 @@
 - 개인 프로젝트(PyQt5 이용)
     - iotProject01 & design01.ui
         - LED on/off 기능
+        - red/blue/green/all off 버튼이 있음
 
     - iotProject02 & design02.ui
         - 온습도 센서 포함
         - Adafruit 모듈 설치가 안되서 실패
 
     - iotProject03 & design03.ui
-        - 
+        - 출입문 시스템
+        - 종모양 버튼으로 부저를 울리고 open/close 버튼으로 서보모터를 동작 시킴
