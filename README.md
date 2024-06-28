@@ -104,3 +104,11 @@
     - iotProject03 & design03.ui
         - 출입문 시스템
         - 종모양 버튼으로 부저를 울리고 open/close 버튼으로 서보모터를 동작 시킴
+
+    ![출입문 시스템](https://raw.githubusercontent.com/breadcoffee/embedded-system-2024/main/images/em006.png)
+
+    - iotProject04 & design04.ui
+        - 자동문 시스템
+        - 초음파 거리센서를 이용해서 30cm 이상 가까워지면 문으로 열고 멀어지면 문을 닫는다.
+
+    
