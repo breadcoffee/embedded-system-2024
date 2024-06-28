@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>784</width>
+    <height>339</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -111,9 +111,9 @@
      </rect>
     </property>
     <property name="title">
-     <string>초인종 시스템</string>
+     <string>출입문 시스템</string>
     </property>
-    <widget class="QPushButton" name="BtnStart">
+    <widget class="QPushButton" name="btnBell">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -156,7 +156,7 @@
       <string>Open</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btnClose">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -170,13 +170,62 @@
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>211</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>자동문 시스템</string>
+    </property>
+    <widget class="QTextEdit" name="textEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>181</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStart">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>130</y>
+       <width>99</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStop">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>130</y>
+       <width>99</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>stop</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>784</width>
      <height>28</height>
     </rect>
    </property>
@@ -250,7 +299,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>BtnStart</sender>
+   <sender>btnBell</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
    <slot>buzz_start()</slot>
@@ -282,7 +331,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>pushButton</sender>
+   <sender>btnClose</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>servo_close()</slot>
@@ -297,6 +346,38 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnStart</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ultra_start()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnStop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ultra_stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>716</x>
+     <y>240</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>red_on()</slot>
@@ -306,5 +387,7 @@
   <slot>buzz_start()</slot>
   <slot>servo_open()</slot>
   <slot>servo_close()</slot>
+  <slot>ultra_start()</slot>
+  <slot>ultra_stop()</slot>
  </slots>
 </ui>
