@@ -96,6 +96,9 @@
     - iotProject01 & design01.ui
         - LED on/off 기능
 
-    - iotProject02 & design01.ui
+    - iotProject02 & design02.ui
         - 온습도 센서 포함
         - Adafruit 모듈 설치가 안되서 실패
+
+    - iotProject03 & design03.ui
+        - 
