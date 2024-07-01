@@ -32,6 +32,7 @@ Buzz = GPIO.PWM(piezoPin, 440)
 
 form_class = uic.loadUiType("design04.ui")[0]
 
+# 거리계산 함수
 def measure():
 	GPIO.output(trigPin, True)
 	time.sleep(0.00001)
@@ -45,6 +46,7 @@ def measure():
 	elapsed = stop - start
 	distance = (elapsed * 19000) / 2
 	return distance
+# 문 열고 닫는 함수
 def door_open():
 	servo.ChangeDutyCycle(10)
 def door_close():
@@ -76,19 +78,6 @@ class WindowClass(QMainWindow, form_class):
 		self.textEdit_2.setText("문이 닫혔습니다!")
 		door_close()
 	# 거리 감지 센서
-	def measure(self):
-		GPIO.output(trigPin, True)
-		time.sleep(0.00001)
-		GPIO.output(trigPin, False)
-		start = time.time()
-
-		while GPIO.input(echoPin) == False:
-			start = time.time()
-		while GPIO.input(echoPin) == True:
-			stop = time.time()
-		elapsed = stop - start
-		distance = (elapsed * 19000) / 2
-		return distance
 	def update_distance(self):
 		distance = measure()
 		print(distance)
